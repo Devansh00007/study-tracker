@@ -7,18 +7,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>📚 Study Progress Tracker</h1>
-    <div class="input-section">
-      <input type="text" id="taskInput" placeholder="Enter a study task..." />
-      <button onclick="addTask()">Add Task</button>
-    </div>
-    <ul id="taskList"></ul>
-    <div class="progress-container">
-      <label for="progressBar">Progress</label>
-      <progress id="progressBar" value="0" max="100"></progress>
-    </div>
-  </div>
-  <script src="script.js"></script>
+  <header>
+    <h1>📚 Study Tracker</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Dashboard</li>
+      <li>Timer</li>
+      <li>DND</li>
+      <li>Quotes</li>
+      <li>Settings</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="topics">
+      <h2>Today's Topics</h2>
+      <ul>
+        <li><input type="checkbox" /> Arrays</li>
+        <li><input type="checkbox" /> Recursion</li>
+        <li><input type="checkbox" /> DBMS Revision</li>
+      </ul>
+      <button>Add Topic</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💻 by Devansh</p>
+  </footer>
 </body>
 </html>
